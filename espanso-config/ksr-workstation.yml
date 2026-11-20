@@ -1,1 +1,8 @@
-
+matches:
+  - trigger: ":dtgit"
+    replace: "{{datetime}} workstation"
+    vars:
+      - name: datetime
+        type: date
+        params:
+          format: "%d-%m-%Y %H:%M"
